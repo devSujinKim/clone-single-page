@@ -55,7 +55,11 @@ const Header = () => (
     <div css={headerWrap}>
       <div css={headerList}>
         <div css={{ display: 'flex' }}>
-          <LogoIcon />
+          <div css={{ margin: '8px 0' }}>
+            <a href="#">
+              <LogoIcon />
+            </a>
+          </div>
           <nav>
             {/* css={{ width: 963, paddingLeft: 393.5, boxSizing: 'border-box' }} */}
             <ul css={gnbList}>
