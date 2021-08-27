@@ -6,6 +6,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+        />
         <body>
           <Main />
           <NextScript />
