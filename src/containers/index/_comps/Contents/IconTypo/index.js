@@ -49,7 +49,7 @@ const ITEMS = [
 
 const IconTypo = () => (
   <div css={container}>
-    <ul css={{ display: 'flex' }}>
+    <ul css={{ display: 'flex', justifyContent: ' space-between' }}>
       {ITEMS.map(({ icon, text }, index) => (
         <li css={item} key={index}>
           <div>{icon}</div>
