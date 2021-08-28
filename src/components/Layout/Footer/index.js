@@ -59,7 +59,6 @@ const customerButton = css`
   margin-left: 10px;
   padding: 4px 15.5px 5px;
   border-radius: 4px;
-  border: 0;
   background-color: #009ede;
   font-size: 12px;
   font-weight: 500;

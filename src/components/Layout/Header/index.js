@@ -19,7 +19,7 @@ const headerList = css`
 `;
 const gnbList = css`
   display: flex;
-  padding: 26px 0 30px;
+  padding: 20px 0 32px;
   font-size: 28px;
 `;
 const gnbItem = css`
@@ -80,10 +80,12 @@ const Header = () => (
             <a href="#" css={signUpButton}>
               Sign up
             </a>
-            <div css={{ marginRight: 28 }}>
+            <button type="submit" css={{ marginRight: 28 }}>
               <SearchIcon />
-            </div>
-            <MailIcon />
+            </button>
+            <a href="#">
+              <MailIcon />
+            </a>
           </div>
         </div>
       </div>
