@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import IconTypo from './IconTypo';
 import Object from './Object';
+import Category from './Category';
 
 const container = css`
   margin: 0 auto;
@@ -13,6 +14,7 @@ const Contents = () => (
   <div css={container}>
     <IconTypo />
     <Object />
+    <Category />
   </div>
 );
 
