@@ -102,6 +102,7 @@ const textWrap = css`
     font-size: 30px;
     line-height: 1.2;
     letter-spacing: -0.48px;
+    transition: all 0.4s ease-in-out;
     &:hover {
       background-color: #fff;
       color: #ff8147;

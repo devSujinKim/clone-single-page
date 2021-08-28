@@ -16,6 +16,7 @@ const item = css`
   width: 194px;
   text-align: center;
   & p {
+    padding-top: 27px;
     font-size: 18px;
     font-weight: 600;
     line-height: 2;
