@@ -1,6 +1,6 @@
 import React from 'react';
 import { css, keyframes } from '@emotion/react';
-import Header from 'components/Header';
+import Header from 'components/Layout/Header';
 
 const mainContainer = css`
   width: 100%;
