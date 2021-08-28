@@ -7,28 +7,31 @@ const headerContainer = css`
   height: 100%;
 `;
 const headerWrap = css`
+  margin: 0 auto;
   padding: 67px 0 17px;
-  display: flex;
-  justify-content: center;
   width: 100%;
   max-width: 1456px;
 `;
 const headerList = css`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 const gnbList = css`
   display: flex;
+  padding: 26px 0 30px;
   font-size: 28px;
 `;
 const gnbItem = css`
   display: flex;
-  padding: 0 26.5px;
   & a {
+    display: block;
+    padding: 0 26px;
     color: #fff;
   }
 `;
 const headerItem = css`
+  margin-left: 116px;
   display: flex;
   align-items: center;
 `;
@@ -54,14 +57,13 @@ const Header = () => (
   <header css={headerContainer}>
     <div css={headerWrap}>
       <div css={headerList}>
-        <div css={{ display: 'flex' }}>
-          <div css={{ margin: '8px 0' }}>
-            <a href="#">
-              <LogoIcon />
-            </a>
-          </div>
+        <div css={{ margin: '8px 0' }}>
+          <a href="#" css={{ display: 'block' }}>
+            <LogoIcon />
+          </a>
+        </div>
+        <div css={{ display: 'flex', justifyContent: 'flex-end' }}>
           <nav>
-            {/* css={{ width: 963, paddingLeft: 393.5, boxSizing: 'border-box' }} */}
             <ul css={gnbList}>
               <li css={gnbItem}>
                 <a href="#">Home</a>
@@ -74,15 +76,15 @@ const Header = () => (
               </li>
             </ul>
           </nav>
-        </div>
-        <div css={headerItem}>
-          <a href="#" css={signUpButton}>
-            Sign up
-          </a>
-          <div css={{ marginRight: 28 }}>
-            <SearchIcon />
+          <div css={headerItem}>
+            <a href="#" css={signUpButton}>
+              Sign up
+            </a>
+            <div css={{ marginRight: 28 }}>
+              <SearchIcon />
+            </div>
+            <MailIcon />
           </div>
-          <MailIcon />
         </div>
       </div>
     </div>
