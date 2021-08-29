@@ -20,6 +20,12 @@ body {
   touch-action: manipulation;
   scroll-behavior: smooth;
 }
+h1,
+h2,
+h3,
+strong {
+  font-weight: 600;
+}
 a {
   text-decoration: none;
   color: #000;
