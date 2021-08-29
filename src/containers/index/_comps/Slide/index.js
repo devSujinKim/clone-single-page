@@ -13,15 +13,17 @@ const slideWrap = css`
 `;
 const slideItemWrap = css`
   display: flex;
+  width: 1260px;
+  height: 190px;
+  justify-content: center;
 `;
 const slideItem = css`
-  padding: 46px 85px 46px 66px;
+  position: relative;
+  padding: 46px 65px;
+  width: 33.33%;
   color: #fff;
-  &:after {
-    content: '""',
-    position: abolute;
-    height: 200px;
-  }
+  box-sizing: border-box;
+  z-index: 10;
   & strong {
     font-size: 2.8rem;
   }
@@ -31,7 +33,16 @@ const slideItem = css`
   }
 `;
 const currentSlideItem = css`
-  background-color: #eaeaea;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 420px;
+    height: 200px;
+    background-color: #eaeaea;
+    z-index: -1;
+  }
   & strong {
     color: #2c2c2c;
   }
