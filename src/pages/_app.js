@@ -14,13 +14,9 @@ const App = ({ Component, pageProps }) => (
   </>
 );
 
-App.defaultProps = {
-  Component: null,
-  pageProps: '',
-};
 App.propTypes = {
-  Component: propTypes.string,
-  pageProps: propTypes.any,
+  Component: propTypes.any.isRequired,
+  pageProps: propTypes.object.isRequired,
 };
 
 export default App;
