@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { css } from '@emotion/react';
+import { ArrLeftIcon, ArrRightIcon } from 'components/Icon';
 
 const container = css`
   display: flex;
@@ -27,6 +28,16 @@ const title = css`
   line-height: 1.13;
   letter-spacing: -0.38px;
   color: #959fba;
+`;
+const arrowWrap = css`
+  justify-content: flex-end;
+  & button {
+    margin: 10px;
+    width: 28px;
+    height: 28px;
+    background-color: #edf0f8;
+    border-radius: 50%;
+  }
 `;
 const month = css`
   padding-bottom: 16px;
@@ -213,7 +224,23 @@ const Category = () => {
           </div>
         </div>
         <div css={{ padding: '44px 41px 36px 42px' }}>
-          <h2 css={title}>Category name</h2>
+          <div
+            css={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'baseline',
+            }}
+          >
+            <h2 css={title}>Category name</h2>
+            <div css={arrowWrap}>
+              <button type="button">
+                <ArrLeftIcon />
+              </button>
+              <button type="button">
+                <ArrRightIcon />
+              </button>
+            </div>
+          </div>
           <strong css={[figure, { paddingTop: 10 }]}>82k</strong>
           <p css={plus}>+136</p>
           <div ref={chartThird} css={[donutChart, donutChartThird]}>
