@@ -189,7 +189,7 @@ const Category = () => {
 
   useEffect(() => {
     chartData.map((item) => drawChart(item.id, item.percent, item.bgColor));
-    countUp(64, 0, 3);
+    countUp(64, 0, 2000);
   }, []);
 
   return (
