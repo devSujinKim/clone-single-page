@@ -42,7 +42,6 @@ const signUpButton = css`
   border-radius: 50px;
   border: 1px solid #fff;
   font-size: 30px;
-  font-weight: 600;
   color: #fff;
   line-height: 1.37;
   letter-spacing: -0.48px;

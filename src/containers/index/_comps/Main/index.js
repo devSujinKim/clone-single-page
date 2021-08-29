@@ -73,7 +73,6 @@ const textWrap = css`
   max-width: 40%;
   & h2 {
     font-size: 74px;
-    font-weight: bold;
     line-height: 1.22;
     letter-spacing: -1.18px;
     color: #fff;

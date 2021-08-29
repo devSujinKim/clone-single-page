@@ -49,7 +49,6 @@ const month = css`
 `;
 const figure = css`
   font-size: 45px;
-  font-weight: bold;
   letter-spacing: -0.72px;
 `;
 const plus = css`
@@ -121,7 +120,7 @@ const table = css`
       padding: 26px 0;
       font-size: 20px;
       &:nth-of-type(1) {
-        font-weight: bold;
+        font-weight: 600;
       }
       &:nth-of-type(2),
       &:nth-of-type(4) {
