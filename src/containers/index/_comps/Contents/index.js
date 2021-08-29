@@ -1,8 +1,8 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import IconTypo from './IconTypo';
-import Object from './Object';
-import Category from './Category';
+import IconTypo from './_comps/IconTypo';
+import Object from './_comps/Object';
+import Category from './_comps/Category';
 
 const container = css`
   margin: 0 auto;
