@@ -81,6 +81,7 @@ const textWrap = css`
     padding: 27px 0 14px;
     color: #fff;
     font-size: 34px;
+    font-weight: normal;
     line-height: 2.65;
     letter-spacing: -0.54px;
   }
